@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -10,7 +11,7 @@
 
         <section class="main-menu">
           <a class="main-header-logo" href="index.html">
-            <img src="img/logo.svg" width="150" height="50" alt="Nerds">
+            <img src="svg/nerds-logo.svg" width="150" height="50" alt="Nerds">
           </a>
           <nav class="main-navigation">
             <ul>
@@ -40,7 +41,56 @@
     <main class="container">
 
       <div class="filter">
-      </div>
+  			<form action="#" method="post">
+  				<fieldset class="filter-price">
+  					<legend>Стоимость:</legend>
+  					<div class="range">
+  						<div class="range-line">
+  							<div class="range-scale" style="width: 70%;"></div>
+  						</div>
+  						<div class="range-btn range-btn-min"></div>
+  						<div class="range-btn range-btn-max"></div>
+  					</div>
+          </div>
+  					<div class="range-fileds">
+  						<label>
+  							от <input type="text" value="0">
+  						</label>
+  						<label>
+  							до <input type="text" value="15000">
+  						</label>
+  					</div>
+  				</fieldset>
+  				<fieldset class="filter-box">
+  					<legend>Сетка:</legend>
+  					<input type="radio" id="adaptive" name="radio" checked>
+  					<label for="adaptive">Адаптивная</label>
+
+  					<input type="radio" id="fixed" name="radio">
+  					<label for="fixed">Фиксированная</label>
+
+  					<input type="radio" id="rubber" name="radio">
+  					<label for="rubber">Резиновая</label>
+  				</fieldset>
+  				<fieldset class="filter-box">
+  					<legend>Особенности:</legend>
+  					<input type="checkbox" id="slider" name="slider">
+  					<label for="slider">Слайдер</label>
+
+  					<input type="checkbox" id="features" name="features">
+  					<label for="advantages">Блок преимуществ</label>
+
+  					<input type="checkbox" id="news" name="news">
+  					<label for="news">Новости</label>
+
+  					<input type="checkbox" id="gallery" name="gallery">
+  					<label for="gallery">Галерея</label>
+
+  					<input type="checkbox" id="basket" name="basket">
+  					<label for="basket">Корзина</label>
+  				</fieldset>
+  				<input class="btn btn-gray" type="submit" value="Показать">
+  			</form>
 
       <div class="catalog">
         <div class="catalog-sorting">
@@ -137,8 +187,25 @@
              <p>191186, Санкт-Петербург,<br>
              ул. Б. Конюшенная, д. 19/8</p>
              <p class="phone">тел. +7 (812) 275-75-75</p>
-             <a class="btn btn-red">Напишите нам</a>
+             <a class="btn btn-red" href="form.html">Напишите нам</a>
            </div>
+           <section class="feedback-form">
+             <div class="feedback-form-close"></div>
+             <form action="#" method="post">
+               <div class="half-width">
+                 <label for="name">Ваше имя:</label>
+                 <input type="text" id="name" name="name" value="" placeholder="представьтесь, пожалуйста">
+               </div>
+               <div class="half-width">
+                 <label for="email">Ваш e-mail:</label>
+                 <input type="email" id="email" name="email" value="" placeholder="для отравки ответа">
+               </div>
+               <label for="text">Текст письма:</label>
+               <textarea name="text" id="text" placeholder="в свободной форме"></textarea>
+               <button class="btn btn-red" type="submit">Отправить</button>
+               <button class="btn btn-gray" type="submit">Отмена</button>
+             </form>
+           </section>
 
          </section>
 
