@@ -9,63 +9,50 @@
 
     <header class="main-header">
 
-        <section class="main-menu">
-          <a class="main-header-logo" href="index.html">
-            <img src="img/logo.svg" width="150" height="50" alt="Nerds">
-          </a>
-          <nav class="main-navigation">
-            <ul>
-              <li class="active">
-                <a href="#">Студия</a>
-              </li>
-              <li>
-                <a href="#">Клиенты</a>
-              </li>
-              <li class="active">
-                <a href="catalog.html">Магазин</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
-              <li>
-                <a href="#">Корзина</a>
-              </li>
-            </ul>
-          </nav>
-        </section>
 
+            <section class="main-menu container">
+              <a class="main-header-logo" href="index.html">
+                <img src="svg/nerds-logo.svg" width="160" height="65" alt="Nerds">
+              </a>
+              <nav class="main-navigation">
+                <ul class="header-navigation">
+                  <li class="navigation-item">
+                    <a href="index.html">Студия</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a href="#">Клиенты</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a href="catalog.html">Магазин</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+                <ul class="header-basket">
+                  <li class="basket">
+                    <a href="#">Корзина</a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+            <div class="catalog-header">
+              <h1>Магазин готовых шаблонов</h1>
+            </div>
     </header>
 
-	<section class="feedback-form">
-		<div class="feedback-form-close"></div>
-		<form action="#" method="post">
-			<div class="half-width">
-				<label for="name">Ваше имя:</label>
-				<input type="text" name="name" value="" placeholder="представьтесь, пожалуйста" id="name">
-			</div>
-			<div class="half-width">
-				<label for="email">Ваш e-mail:</label>
-				<input type="email" name="email" value="" placeholder="для отравки ответа" id="email">
-			</div>
-			<label for="text">Текст письма:</label>
-			<textarea name="text" placeholder="в свободной форме" id="text"></textarea>
-			<button class="btn btn-red" type="submit">Отправить</button>
-		</form>
-	</section>
-
-	<footer class="main-footer">
-		<div class="footer-social">
-		<ul>
-		 <li><a class="social-button" href="#">Вконтакте</a></li>
-		 <li><a class="social-button" href="#">Фейсбук</a></li>
-		 <li><a class="social-button" href="#">Инстаграм</a></li>
-	 </ul>
-	 </div>
-			<div class="footer-text">
-				<b>Давайте дуржить, это выгодно</b>
-				<span>Скидка 10% для друзей из социальных сетей.</span>
-			</div>
-
-	</footer>
+    <section class="nerds-modal-form-show">
+      <button class="nerds-modal-form-close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="nerds-modal-form-title">Напишите нам</h2>
+      <form class="nerds-form-content" action="nerds.ru" method="post">
+        <label class="form-block-name">Ваше имя:<br>
+        <input class="nerds-form-items form-name" type="text" name="name" placeholder="Представьтесь, пожалуйста" autofocus></label>
+        <label class="form-block-email">Ваш e-mail:<br>
+        <input class="nerds-form-items form-email" type="email" name="email" placeholder="Для отправки ответа"></label>
+        <label class="form-block-letter">Текст письма:<br>
+        <textarea class="nerds-form-items form-comment" name="comment" placeholder="В свободной форме"></textarea></label>
+        <button class="form-btn" type="submit">Отправить</button>
+      </form>
+    </section>
 	</body>
 	</html>
