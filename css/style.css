@@ -722,6 +722,17 @@ body {
 	opacity: 0.5;
 }
 
+.catalog-grid-checkbox input[type="checkbox"]:disabled + label {
+	opacity: 0.3;
+	cursor: default;
+}
+
+.catalog-properties-checkbox input[type="checkbox"]:disabled + label {
+	opacity: 0.3;
+	cursor: default;
+}
+
+
 .catalog-grid-checkbox input[type="radio"],
 .catalog-properties-checkbox input[type="checkbox"] {
 	position: absolute;
