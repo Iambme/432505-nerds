@@ -1278,7 +1278,7 @@ body {
 .nerds-modal-form {
   display: none;
   position: fixed;
-  top: 20%;
+  top: 5%;
   left: 50%;
   width: 960px;
   height: 590px;
@@ -1419,4 +1419,7 @@ body {
   border: none;
   border-radius: 5px;
   background-color: #FB565A;
+}
+.signature {
+	display: block;
 }
