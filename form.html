@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="main-header">
+
+
+            <section class="main-menu container">
+              <a class="main-header-logo" href="index.html">
+                <img src="svg/nerds-logo.svg" width="160" height="65" alt="Nerds">
+              </a>
+              <nav class="main-navigation">
+                <ul class="header-navigation">
+                  <li class="navigation-item">
+                    <a href="index.html">Студия</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a href="#">Клиенты</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a href="catalog.html">Магазин</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+                <ul class="header-basket">
+                  <li class="basket">
+                    <a href="#">Корзина</a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+            <div class="catalog-header">
+              <h1>Магазин готовых шаблонов</h1>
+            </div>
+    </header>
+
+    <section class="nerds-modal-form-show">
+      <button class="nerds-modal-form-close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="nerds-modal-form-title">Напишите нам</h2>
+      <form class="nerds-form-content" action="nerds.ru" method="post">
+        <label class="form-block-name">Ваше имя:<br>
+        <input class="nerds-form-items form-name" type="text" name="name" placeholder="Представьтесь, пожалуйста" autofocus></label>
+        <label class="form-block-email">Ваш e-mail:<br>
+        <input class="nerds-form-items form-email" type="email" name="email" placeholder="Для отправки ответа"></label>
+        <label class="form-block-letter">Текст письма:<br>
+        <textarea class="nerds-form-items form-comment" name="comment" placeholder="В свободной форме"></textarea></label>
+        <button class="form-btn" type="submit">Отправить</button>
+      </form>
+    </section>
+	</body>
+	</html>
